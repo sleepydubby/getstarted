@@ -37,7 +37,11 @@ main {
 
 @media (min-width: 768px) {
   main {
+    display: grid;
     grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    justify-items: center;
+    align-items: start;
   }
 }
 
@@ -47,7 +51,7 @@ section {
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 500px;
+  max-width: none; /* allow grid to control column widths */
 }
 
 section h3 {
